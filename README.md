@@ -1,4 +1,4 @@
-# surfwrench_demo
+# Surfwrench
 
 Developed by Andrew Bertino
 
