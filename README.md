@@ -8,13 +8,13 @@ A work-in-progress Android application. Created during the Surfwrench internship
 
 Estimated completion date: 4/1/20
 
-# Showcase
+## Showcase
 
-![](screenshots/login_page.png)
+* ![](screenshots/login_page.png)
 
-![](screenshots/menu_page.png)
+* ![](screenshots/menu_page.png)
 
-![](screenshots/garage_page.png)
+* ![](screenshots/garage_page.png)
 
 
 
