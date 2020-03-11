@@ -762,7 +762,7 @@ class _LoginScreen3State extends State<LoginScreen3>
   }
 
   gotoLoginFromSignup() {
-    //controller_minus1To0.reverse(from: 0.0);
+    //controller_minus2To0.reverse(from: 0.0);
     _controller.animateToPage(
       0,
       duration: Duration(milliseconds: 800),
@@ -807,3 +807,5 @@ class _LoginScreen3State extends State<LoginScreen3>
         ));
   }
 }
+
+//todo Add google/facebook options to login screen

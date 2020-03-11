@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'menu_button_widget.dart';
+import 'package:surfwrench_demo/fixmycar_page/fixmycar_page.dart';
+import 'package:surfwrench_demo/garage_page/garage_page.dart';
+import 'package:surfwrench_demo/login_page/login_page.dart';
+import 'widgets/menu_button.dart';
+
 
 
 class MenuPage extends StatelessWidget {
@@ -10,6 +14,8 @@ class MenuPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
         title: Padding(
           padding: const EdgeInsets.only(top: 5),
           child: Center(
@@ -28,7 +34,7 @@ class MenuPage extends StatelessWidget {
             width: 50,
             child: IconButton(
                 icon: Image(
-                image: AssetImage('assets/gear_white.png'),
+                image: AssetImage('assets/gear.png'),
                 ), 
                 onPressed: () {
                   print('Settings...');
@@ -57,7 +63,7 @@ class MenuPage extends StatelessWidget {
                   child: Text('Menu',
                   style: style.copyWith(fontSize: 25, color: Colors.black),),
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: Colors.white,
                   ),
                 ),
               ),
@@ -109,20 +115,22 @@ class MenuPage extends StatelessWidget {
               height: 75,
               //color: Colors.red,
             ),
-            MenuButtonWidget(
+            MenuButton(
               text: 'Fix My Car',
               textColor: Colors.white,
               buttonColor: Colors.blue,
+              onPressedPage: GaragePage(),
             ),
-            MenuButtonWidget(
+            MenuButton(
               text: 'I Fix Cars',
               textColor: Colors.white,
               buttonColor: Colors.orange,
             ),
-            LoginMenuButton(
+            MenuButton(
               text: 'Login',
               textColor: Colors.white,
               buttonColor: Colors.lightGreen,
+              onPressedPage: LoginPage(),
             ),
             Container(
               height: 125,

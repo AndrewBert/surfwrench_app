@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-class LoginPage extends StatelessWidget {
+class LoginPageUnused extends StatelessWidget {
 
 static final TextStyle style = TextStyle(fontFamily: 'Montserrat', fontSize: 20.0);
 final emailField = TextField(

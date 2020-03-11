@@ -1,25 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:surfwrench_demo/fixmycar_page/fixmycar_page.dart';
 import 'package:surfwrench_demo/garage_page/garage_item_widget.dart';
 import 'package:surfwrench_demo/garage_page/wrench_request_item_widget.dart';
 import 'package:surfwrench_demo/home_page/menu_page.dart';
 
 class GaragePage extends StatelessWidget {
-  final TextStyle header =
-      TextStyle(fontFamily: 'Montserrat', fontSize: 20.0, color: Colors.black, fontWeight: FontWeight.bold);
+  final TextStyle header = TextStyle(
+      fontFamily: 'Montserrat',
+      fontSize: 20.0,
+      color: Colors.black,
+      fontWeight: FontWeight.bold);
   final TextStyle body = TextStyle(fontFamily: 'Montserrat', fontSize: 15);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.white,
+          elevation: 0,
           leading: Center(
             child: Container(
               child: SizedBox.expand(
                 child: IconButton(
                   icon: Icon(Icons.home),
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>
-          MenuPage()));
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => MenuPage()));
                   },
                 ),
               ),
@@ -29,7 +35,7 @@ class GaragePage extends StatelessWidget {
             Container(
               child: IconButton(
                 icon: Icon(Icons.add),
-                onPressed: (){},
+                onPressed: () {},
               ),
             )
           ],
@@ -52,11 +58,17 @@ class GaragePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Text('Garage', style: header,),
+                      Text(
+                        'Garage',
+                        style: header,
+                      ),
                       SizedBox(
                         height: 10,
                       ),
-                      Text('Welcome, User!', style: body,),
+                      Text(
+                        'Welcome, User!',
+                        style: body,
+                      ),
                       SizedBox(
                         height: 15,
                       ),
@@ -94,15 +106,24 @@ class GaragePage extends StatelessWidget {
                     children: <Widget>[
                       Row(
                         children: <Widget>[
-                          Text('Wrench Requests', 
-                          style: header,),
+                          Text(
+                            'Wrench Requests',
+                            style: header,
+                          ),
                           IconButton(
                             icon: Icon(Icons.add_circle_outline),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => FixMyCarPage()));
+                            },
                           ),
                         ],
                       ),
-                      SizedBox(height: 15,),
+                      SizedBox(
+                        height: 15,
+                      ),
                       Padding(
                         padding: const EdgeInsets.only(left: 10),
                         child: ListView(
@@ -130,7 +151,6 @@ class GaragePage extends StatelessWidget {
               ],
             ),
           ),
-        )
-      );
+        ));
   }
 }

@@ -17,6 +17,7 @@ class _MainMenuScreen extends State<MainMenuScreen>
       appBar: AppBar(
         title: Text('Home', style: TextStyle(color: Colors.white),),
         backgroundColor: Colors.blueAccent,
+        elevation: 0,
       ),
       body: SafeArea(
         child: Container(

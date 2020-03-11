@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:surfwrench_demo/garage_page/garage_page.dart';
+import 'package:surfwrench_demo/home_page/menu_page.dart';
 
 class LoginPage extends StatelessWidget {
   TextStyle style = TextStyle(fontFamily: 'Montserrat', fontSize: 20.0);
@@ -34,8 +35,8 @@ class LoginPage extends StatelessWidget {
         minWidth: MediaQuery.of(context).size.width,
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
         onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>
-          GaragePage()));
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => MenuPage()));
         },
         child: Text("Login",
             textAlign: TextAlign.center,
@@ -60,56 +61,57 @@ class LoginPage extends StatelessWidget {
     );
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Login',style: style),
-      ),
-      body: SingleChildScrollView(
-      child: Center(
-        child: Container(
-          color: Colors.white,
-          child: Padding(
-            padding: const EdgeInsets.all(36.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                SizedBox(
-                  height: 155.0,
-                  child: Image.asset(
-                    "assets/surfwrench.png",
-                    fit: BoxFit.contain,
-                  ),
+        appBar: AppBar(
+          title: Text('Login', style: style),
+          backgroundColor: Colors.white,
+          elevation: 0,
+        ),
+        body: SingleChildScrollView(
+          child: Center(
+            child: Container(
+              color: Colors.white,
+              child: Padding(
+                padding: const EdgeInsets.all(36.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    SizedBox(
+                      height: 155.0,
+                      child: Image.asset(
+                        "assets/surfwrench.png",
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                    SizedBox(height: 45.0),
+                    emailField,
+                    SizedBox(height: 25.0),
+                    passwordField,
+                    Padding(
+                      padding: const EdgeInsets.only(left: 170),
+                      child: GestureDetector(
+                        onTap: () {
+                          print('Forgot Password');
+                        },
+                        child: Text("Forgot password",
+                            textAlign: TextAlign.center,
+                            style: style.copyWith(
+                                color: Colors.blue, fontSize: 15)),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 35.0,
+                    ),
+                    loginButton,
+                    SizedBox(
+                      height: 15.0,
+                    ),
+                    registerButton
+                  ],
                 ),
-                SizedBox(height: 45.0),
-                emailField,
-                SizedBox(height: 25.0),
-                passwordField,
-                Padding(
-                  padding: const EdgeInsets.only(left: 170),
-                  child: GestureDetector(
-                    onTap: () {
-                      print('Forgot Password');
-                    },
-                    child: Text("Forgot password",
-                      textAlign: TextAlign.center,
-                      style: style.copyWith(
-                      color: Colors.blue,fontSize: 15)),
-                  ),
-                ),
-                  SizedBox(
-                  height: 35.0,
-                ),
-                loginButton,
-                SizedBox(
-                  height: 15.0,
-                ),
-                registerButton
-              ],
+              ),
             ),
           ),
-        ),
-      ),
-        )
-    );
+        ));
   }
 }
