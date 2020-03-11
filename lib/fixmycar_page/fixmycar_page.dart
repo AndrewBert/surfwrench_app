@@ -11,6 +11,8 @@ class _FixMyCarPageState extends State<FixMyCarPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
         title: Text('Fix My Car'),
       ),
       body: Container(

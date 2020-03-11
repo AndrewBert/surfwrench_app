@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:surfwrench_demo/fixmycar_page/fixmycar_page.dart';
-import 'package:surfwrench_demo/garage_page/garage_item_widget.dart';
-import 'package:surfwrench_demo/garage_page/wrench_request_item_widget.dart';
 import 'package:surfwrench_demo/home_page/menu_page.dart';
+import 'widgets/garage_item_widget.dart';
+import 'widgets/wrench_request_item_widget.dart';
 
 class GaragePage extends StatelessWidget {
   final TextStyle header = TextStyle(
