@@ -1,16 +1,14 @@
 # surfwrench_demo
 
-A new Flutter application.
+Developed by Andrew Bertino
 
-## Getting Started
+A Flutter application. 
 
-This project is a starting point for a Flutter application.
+A work-in-progress Android application. Created during the Surfwrench internship period: 11/15/19 - Present
 
-A few resources to get you started if this is your first Flutter project:
+Estimated completion date: 4/1/20
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+# Showcase
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
