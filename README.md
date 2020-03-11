@@ -12,5 +12,9 @@ Estimated completion date: 4/1/20
 
 ![](screenshots/login_page.png)
 
+![](screenshots/menu_page.png)
+
+![](screenshots/garage_page.png)
+
 
 
