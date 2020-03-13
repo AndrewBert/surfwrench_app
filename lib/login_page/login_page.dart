@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:surfwrench_demo/garage_page/garage_page.dart';
-import 'package:surfwrench_demo/home_page/menu_page.dart';
+import 'package:surfwrench_demo/home_page/home_page.dart';
+
 
 class LoginPage extends StatelessWidget {
   TextStyle style = TextStyle(fontFamily: 'Montserrat', fontSize: 20.0);
@@ -36,7 +36,7 @@ class LoginPage extends StatelessWidget {
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
         onPressed: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => MenuPage()));
+              context, MaterialPageRoute(builder: (context) => HomePage()));
         },
         child: Text("Login",
             textAlign: TextAlign.center,

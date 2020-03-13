@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:surfwrench_demo/login_page/login_page.dart';
 
 
-class MenuButton extends StatelessWidget{
-  MenuButton({this.text, this.textColor, this.buttonColor, this.onPressedPage});
+class HomeButton extends StatelessWidget{
+  HomeButton({this.text, this.textColor, this.buttonColor, this.onPressedPage});
 
   final String text;
   final Color textColor;

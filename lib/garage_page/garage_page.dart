@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:surfwrench_demo/add_car_page/add_car_page.dart';
 import 'package:surfwrench_demo/fixmycar_page/fixmycar_page.dart';
-import 'package:surfwrench_demo/home_page/menu_page.dart';
+import 'package:surfwrench_demo/home_page/home_page.dart';
 import 'widgets/garage_item_widget.dart';
 import 'widgets/wrench_request_item_widget.dart';
 
@@ -25,7 +26,7 @@ class GaragePage extends StatelessWidget {
                   icon: Icon(Icons.home),
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => MenuPage()));
+                        MaterialPageRoute(builder: (context) => HomePage()));
                   },
                 ),
               ),
@@ -35,7 +36,10 @@ class GaragePage extends StatelessWidget {
             Container(
               child: IconButton(
                 icon: Icon(Icons.add),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>
+          AddCarPage()));
+                },
               ),
             )
           ],

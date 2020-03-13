@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:surfwrench_demo/home_page/menu_page.dart';
+import 'home_page/home_page.dart';
 import 'login_page/login_page.dart';
 
 
@@ -11,12 +11,12 @@ class RouteGenerator {
 
     switch(settings.name){
       case '/':
-        return MaterialPageRoute(builder: (_) => MenuPage());
+        return MaterialPageRoute(builder: (_) => HomePage());
       case '/login':
         return MaterialPageRoute(builder: (_) => LoginPage());
     }
 
     //if there's an error it routes back home
-    return MaterialPageRoute(builder: (_) => MenuPage());
+    return MaterialPageRoute(builder: (_) => HomePage());
   }
 }
